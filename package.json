@@ -1,0 +1,12 @@
+{
+  "name": "smart-warehouse-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"npm --prefix smartware/backend run dev\" \"npm --prefix smartware/frontend run dev\"",
+    "build": "npm --prefix smartware/frontend run build",
+    "lint": "npm --prefix smartware/frontend run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
